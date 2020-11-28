@@ -21,7 +21,7 @@ function App()
 		setItems([...items])
 	  }
 	const [newItem,setnewItem]=useState("");
-	const [items,setItems]=useState(["milk", "vegetable"]);
+	const [items,setItems]=useState([]);
 	return (
 	<div id="main">
 	<textarea id="task" onChange={newItemChange} placeholder="Input" value={newItem}></textarea>
