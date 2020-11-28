@@ -28,7 +28,7 @@ function App()
 	<button id="btn" onClick={addItem} disabled={newItem.trim().length===0}>Add Items</button>
 	{
 		items.map((item,idx)=>(
-		<ListItem Item={item} key={idx} idx={idx} onEdit={true}  editHandler={editHandler} deleteHandler={deleteHandler}/>
+		<ListItem Item={item} key={`${item}_${idx}`} idx={idx} onEdit={true}  editHandler={editHandler} deleteHandler={deleteHandler}/>
 		))
 	}
 
